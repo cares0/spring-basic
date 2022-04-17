@@ -5,11 +5,12 @@ import com.cares.hellospring.repository.MemberRepository;
 import com.cares.hellospring.repository.MemoryMemberRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
+import org.springframework.transaction.annotation.Transactional;
 
 import java.util.List;
 import java.util.Optional;
 
-
+@Transactional
 public class MemberService {
     // 서비스는 비즈니스로직에 맞도록 메서드명을 작성함
 
